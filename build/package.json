@@ -1,0 +1,13 @@
+{
+  "name": "joomla.org.site",
+  "version": "0.0.1",
+  "description": "Joomla.org Website",
+  "dependencies": {
+    "jquery-countto": "1.2.0",
+    "scrollmagic": "2.0.5",
+    "grunt": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-uglify": "latest"
+  },
+  "license": "GPL-2.0+"
+}
