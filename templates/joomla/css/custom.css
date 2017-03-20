@@ -42,8 +42,8 @@ box-shadow:0 5px 15px -10px rgba(0, 0, 0, 1);
   background: #25304f url("../../../images/homepage/header.jpg") no-repeat scroll center 70% / cover ;
 }
 .topbanner .container {
-  padding-bottom: 60px;
-  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   background-color: transparent;
   border: none;
   border-radius: 0;
@@ -90,7 +90,7 @@ box-shadow:0 5px 15px -10px rgba(0, 0, 0, 1);
 }
 .hero-teaser .hero-teaser-body {
   min-height: 80px;
-  padding: 0 30px 30px;
+  padding: 0 25px 0;
   font-size:14px;
 }
 .hero-teaser footer {
@@ -1104,7 +1104,6 @@ body {
 }
 .hero-teaser .hero-teaser-body {
   min-height: 95px;
-  padding: 0 30px 25px;
 }
 .whyjoomla .span6:first-child {
   -webkit-transform: translateY(25%);
