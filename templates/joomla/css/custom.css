@@ -39,7 +39,12 @@ box-shadow:0 5px 15px -10px rgba(0, 0, 0, 1);
 /*hero*/
 .moduletable.topbanner {
   margin: -10px 0 0;
-  background: #25304f url("../../../images/homepage/header.jpg") no-repeat scroll center 70% / cover ;
+  background-image: url("../../../images/homepage/header.jpg");
+  background-repeat: no-repeat;
+  background-position: center 70%;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #25304f;
 }
 .topbanner .container {
   padding-bottom: 50px;
