@@ -110,14 +110,12 @@ box-shadow:0 5px 15px -10px rgba(0, 0, 0, 1);
   text-decoration: none;
 }
 .hero-teaser > div {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 0.2s ease-in 0s;
-  transition: all 0.2s ease-in 0s;
+  transform: translateY(0);
+  transition: transform .3s ease;
 }
 .hero-teaser > div:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: translateY(-10px);
+  transition: transform .3s ease;
 }
 .hero-teaser > div:hover article {
   box-shadow: 0 0 30px #0d111c;
