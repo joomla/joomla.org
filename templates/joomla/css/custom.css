@@ -42,7 +42,6 @@ box-shadow:0 5px 15px -10px rgba(0, 0, 0, 1);
   background-image: url("../../../images/homepage/header.jpg");
   background-repeat: no-repeat;
   background-position: center 70%;
-  background-attachment: scroll;
   background-size: cover;
   background-color: #25304f;
 }
