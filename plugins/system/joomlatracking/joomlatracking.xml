@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="system" method="upgrade">
+	<name>System - Joomla.org Analytics Codes</name>
+	<author>Joomla! Project</author>
+	<creationDate>January 2017</creationDate>
+	<copyright>Copyright (C) 2015 - 2017 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.2</version>
+	<description>Plugin to append analytics tracking codes for the site.</description>
+	<files>
+		<filename plugin="joomlatracking">joomlatracking.php</filename>
+	</files>
+</extension>
