@@ -17,6 +17,18 @@
 .itemid-122 .footer {
     margin-top: 0;
 }
+
+/*error page display*/
+.error.itemid-122 #content {
+    display: inherit;
+}
+.error.itemid-122 .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1170px;
+}
+/**/
+
 .event img,
 .announcements img {
     box-shadow: 0 5px 15px -10px rgba(0, 0, 0, 1);
