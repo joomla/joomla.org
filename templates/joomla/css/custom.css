@@ -619,6 +619,22 @@ figure.effect:hover p {
     letter-spacing: 1px;
     font-size: 68.5%;
 }
+
+/*Acymailing*/
+.acyreceive input {
+	float: left;
+	margin-right: 5px;
+}
+.acy input {
+  	width: 90%;
+}
+
+/*Well*/
+.well {
+  	border-radius: 0;
+  	box-shadow: none;
+}
+
 /* Custom CSS */
 /*Asenine*/
 
