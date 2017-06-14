@@ -43,7 +43,8 @@
 .features .btn,
 .whyjoomla .btn,
 .feedshp .btn,
-.showcase .btn {
+.showcase .btn,
+.newsletter .btn {
     padding: 10px 20px;
     margin: 20px 0;
     border-radius: 50px;
@@ -619,20 +620,39 @@ figure.effect:hover p {
     letter-spacing: 1px;
     font-size: 68.5%;
 }
+/*Newsletter HP*/
 
+.newsletter {
+    margin-top:15px;
+}
+.newsletter input#user_name,
+.newsletter input#user_email {
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px dotted #aaa;
+    box-shadow: none;
+    margin-right: 40px;
+    border-radius: 0;
+    padding-top: 20px;
+}
 /*Acymailing*/
+
 .acyreceive input {
-	float: left;
-	margin-right: 5px;
+    float: left;
+    margin-right: 5px;
 }
 .acy input {
-  	width: 90%;
+    width: 90%;
 }
 
 /*Well*/
+
 .well {
-  	border-radius: 0;
-  	box-shadow: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 /* Custom CSS */
@@ -1316,6 +1336,10 @@ h2.global {
     }
     .moduletable.showcase {
         text-align: center;
+    }
+    .newsletter input#user_name,
+    .newsletter input#user_email {
+  	margin-right: 20px;
     }
 }
 /* Smartphones to Tablets */
