@@ -655,6 +655,14 @@ figure.effect:hover p {
     box-shadow: none;
 }
 
+/*Core Features 2017*/
+.item-page .corefeatures h3 {
+  	margin-top: 0;
+}
+.item-page .corefeatures .row-fluid {
+  	margin-top: 30px;
+}
+
 /* Custom CSS */
 /*Asenine*/
 
