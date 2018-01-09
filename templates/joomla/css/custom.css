@@ -1,3 +1,11 @@
+/*SiteLock*/
+.sitelock {
+    background-color: #0b172a;
+}
+.sitelock .pull-right {
+	margin: -40px 60px 10px 10px;
+}
+
 /*Homepage Redesign*/
 
 .itemid-122 .body .container-fluid {
@@ -1184,6 +1192,16 @@ h2.global {
     }
 }
 /* Tablets */
+
+@media only screen and (max-width: 979px) {
+	.sitelock {
+		text-align: center;
+	}
+  	.sitelock .pull-right {
+  		float: none;
+    	margin: 10px;
+	}
+} 
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
     body {
