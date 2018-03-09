@@ -662,12 +662,20 @@ figure.effect:hover p {
     box-shadow: none;
 }
 
-/*Core Features 2017*/
-.item-page .corefeatures h3 {
-  	margin-top: 0;
+/*Benefits Features 2018*/
+.itemid-195 .accordion-group {
+    border-radius: 0;
 }
-.item-page .corefeatures .row-fluid {
-  	margin-top: 30px;
+.itemid-195 .accordion-group h4 {
+    margin: 0;
+    padding: 12px 0;
+}
+.itemid-195 .accordion-group h4:hover {
+    background: #eee;
+}
+.itemid-195 .accordion-group h4 a:hover,
+.itemid-195 .accordion-group h4 a:focus {
+    text-decoration: none;
 }
 
 /* Custom CSS */
