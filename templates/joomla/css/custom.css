@@ -1,3 +1,11 @@
+/*SiteLock*/
+.sitelock {
+    background-color: #0b172a;
+}
+.sitelock .pull-right {
+	margin: -40px 60px 10px 10px;
+}
+
 /*Homepage Redesign*/
 
 .itemid-122 .body .container-fluid {
@@ -649,7 +657,6 @@ figure.effect:hover p {
 }
 
 /*Well*/
-
 .well {
     border-radius: 0;
     box-shadow: none;
@@ -974,7 +981,8 @@ where {
     min-height: 250px;
 }
 .pack .span3 {
-    min-height: 285px;
+    min-height: 400px;
+    margin-bottom: 10px;
 }
 .pack h3 {
     font-size: 1.75em;
@@ -1183,7 +1191,18 @@ h2.global {
         min-height: 290px;
     }
 }
+
 /* Tablets */
+
+@media only screen and (max-width: 979px) {
+	.sitelock {
+		text-align: center;
+	}
+  	.sitelock .pull-right {
+  		float: none;
+    	margin: 10px;
+	}
+} 
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
     body {
@@ -1246,6 +1265,7 @@ h2.global {
         left: 15px;
     }
 }
+
 @media only screen and (max-width: 767px) {
     .footer {
         margin-left: 0;
@@ -1348,6 +1368,9 @@ h2.global {
     .newsletter input#user_name,
     .newsletter input#user_email {
   	margin-right: 20px;
+    }
+     .pack .span3 { 
+         min-height: 200px; 
     }
 }
 /* Smartphones to Tablets */
