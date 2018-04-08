@@ -1,9 +1,29 @@
+/*Partners page - anchors 2018*/
+
+#rf:target,
+#cleantalk:target,
+#cloudaccess:target,
+#crowdin:target,
+#github:target,
+#glip:target,
+#hostingde:target,
+#jetbrains:target,
+#ost:target,
+#rochen:target,
+#screaming:target,
+#sitelock:target,
+#sflc:target {
+    margin-top: -85px;
+    padding-top: 85px;
+}
+
 /*SiteLock*/
+
 .sitelock {
     background-color: #0b172a;
 }
 .sitelock .pull-right {
-	margin: -40px 60px 10px 10px;
+    margin: -40px 60px 10px 10px;
 }
 
 /*Homepage Redesign*/
