@@ -573,6 +573,11 @@
 .acy input {
     width: 90%;
 }
+.acyconsent input[type="checkbox"] {
+    float: left;
+	margin-right: 10px;
+	margin-top: 2px;
+}
 
 /*Well*/
 .well {
