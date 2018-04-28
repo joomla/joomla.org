@@ -1088,6 +1088,10 @@ h2.global {
 .sponsor-application .btngreensponsor {
     border: none;
 }
+/*consent*/
+.form2LinesLayout .formField.rsform-block-requestconsent label {
+    width:auto;
+}
 /***END OF SPONSOR***/
 
 /*RESPONSIVE*/
