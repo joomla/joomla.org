@@ -43,7 +43,6 @@
 !/templates/joomla/js/countup.min.js
 /tests
 /tmp
-/.htaccess
 /.travis.yml
 /CONTRIBUTING.md
 /LICENSE.txt
