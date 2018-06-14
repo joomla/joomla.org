@@ -913,7 +913,7 @@ aside ul li {
     min-height: 250px;
 }
 .pack .span3 {
-    min-height: 400px;
+    min-height: 460px;
     margin-bottom: 10px;
 }
 .pack h3 {
@@ -1381,7 +1381,7 @@ h2.global {
         display: none;
     }
     .submenu {
-        height: 96px;
+        height: 200px;
     }
     .submenu ul {
         margin: 0;
