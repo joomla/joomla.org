@@ -272,6 +272,12 @@
 .announcements img {
     padding-top: 15px;
 }
+.newsflash-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.newsflash-item .readmore {
+    margin-top: 10px;
+}
 
 /*Why Joomla*/
 .moduletable.whyjoomla {
