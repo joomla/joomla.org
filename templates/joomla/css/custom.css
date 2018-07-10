@@ -760,6 +760,9 @@ dd.modified {
 .form-horizontal legend {
     border: none;
 }
+.form-horizontal .checkbox input[type="checkbox"] {
+    width: auto;
+}
 
 /*side menus*/
 aside ul li {
