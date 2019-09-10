@@ -9,5 +9,5 @@
     "grunt-contrib-concat": "latest",
     "grunt-contrib-uglify": "latest"
   },
-  "license": "GPL-2.0+"
+  "license": "GPL-2.0-or-later"
 }
