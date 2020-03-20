@@ -5,21 +5,21 @@ Contact: security@joomla.org
 Encryption: https://developer.joomla.org/security/gpg-keys.html
 Acknowledgments: https://developer.joomla.org/security-centre.html
 Preferred-Languages: en
-Canonical: https://joomla.org/.well-known/security.txt
+Canonical: https://www.joomla.org/.well-known/security.txt
 Policy: https://developer.joomla.org/security.html
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEPYFcJjaqsgoey0InllSCd8GEcsgFAl50cG8ACgkQllSCd8GE
-csjTCRAAq1Qfh3G1dxgpmPaTm3thRpeb34U94ZlzR0YiXu9vfnrU3wP3Y+AXQJJz
-fb5lzTBIfmcLavYGogYL3GByDoQ1PRLqsyYzzxm9nAXx04xABhxryQfxPF7Z0rpT
-JndhZlFP9tMbY0enWtCys7i+u7hPpK3DFsN89svwWf8si5uAU33e6HqYjErjneVD
-48hYWOQnxsuR6ITMGF2c/VSdOR3Mw6ljCZzslzknPQ1bsCkxqfcGBR8CA7AawHS1
-FNOw+bNEVQ7LZKPMcknbOnkr/Q5AonRNcKPtM+MHiIYkQnizbMF8EXTJ+xAtlQLm
-GXCO0ZsullkXClbVaps6LWlsFCQKwgKTMV1fE5ZiFKO0mgcpksFpr0Hr4TUJpj4e
-TjiNplfu9g97jrZMiiIoTDJhvgEj8BHyBoiV4cnZKpqnAKs4tdzYCMszU5ufAinN
-p7Drmd8fqaBv5IPvBF6oBKSXAR3VPcpe3RTjLtbSwl+hdXv6Bu3OC+pcwBsRIceI
-rmDeRWPaFA4EDa57wjWUTbZr1WF6VtEmIm3RrFucBAG8Oq6tS3rCw/UM/LNhc3pr
-f+b8iT+z2pjJT1kiJzTCwlOppM0HShZIgT3zVTG+VDvxyR62T91scvIGbvuUkrgj
-HrDDY5/WMS1pE7ppT4iwVU9Tyxt6cF2XVjXflSH7BaifmaAs3Nw=
-=BrE7
+iQIzBAEBCgAdFiEEPYFcJjaqsgoey0InllSCd8GEcsgFAl50ufoACgkQllSCd8GE
+cshH7hAAkk9QrkqmelJZ8k33p4lZeun8E8OitIDsWB0nPyRF373vo++J5rHW7zKP
+/bjImftx9C4KYk1zcUEsG8C7KMGPf/+R/ztjQlQb/wMZZZ+XDiVrdvdGQMWoDRij
+9wp8jr2dic8iisLNcx293MhW6cdDRn6twlzz7QLpdSrnLzPdImMjmN4h2QIEzg5y
+UthsjMWXPjRnzrBr6fFYLk1S4+5gp9yypaSW4nObu7ZL/P2k7foLduM4W0T72jb6
+7qpwZFvOyMag6w5emGaVvZtW1jsm7ltnq4uirc0HgtaeJVUFs+zvKL/xN5DtwurH
+4bRs5t7a5XoW9NTio3htPbejG/2P+jmC9mMJu/ZjCVvC4Hc60kFbMZw1sEkwOTLQ
+ybBDYB7ydxZjAlHwEbS7J7ZAI/+CQg66P06EYTPhYWorsv3CChfmh4odwHZAbPcl
+7ftKSAgTqej97jiBkX40vLNdZfzB7LeUHzxTL+3bBYCcm2oN9Tk3vl8qri7nMJBu
+Bj/OaJIInYE96Ru6AkQV6T89jggJx1eUDv8azSszjMNYhxVd0kvbGVfwdmeWhF/Q
+xCUCL6a8xqHodDDpJ3qepsCjkREw789zqnDjMNKnh2BFjVi5Mqal6X/UneHaNDHO
+/awUs30QMbPwctIfT7BirMsObrGtBaS3u0PYXXXESP4wjYxIYMo=
+=d/gK
 -----END PGP SIGNATURE-----
