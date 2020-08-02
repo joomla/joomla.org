@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/jsst
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.joomla.org
+  * I am jsst (https://keybase.io/jsst) on keybase.
+  * I have a public key with fingerprint 23C2 BDFD 9007 8479 D72E  BF2C 6424 E9D7 F225 7C3A
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01014e36de0228017f564175cbedcd5ba033753314416c10870d6a3358b8574300130a",
+            "fingerprint": "23c2bdfd90078479d72ebf2c6424e9d7f2257c3a",
+            "host": "keybase.io",
+            "key_id": "6424e9d7f2257c3a",
+            "kid": "01014e36de0228017f564175cbedcd5ba033753314416c10870d6a3358b8574300130a",
+            "uid": "644b634e98a0b5d4c74670a728105d19",
+            "username": "jsst"
+        },
+        "service": {
+            "hostname": "www.joomla.org",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1478014934,
+    "expire_in": 157680000,
+    "prev": "95276b6af4137d239339ce9e47f1fa0b81318e2357f5553df4b854316f1483c8",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIlAnicrVJrSBRRFN4tTRMqI3ItJHTsRajc18ydWVIKNUKSwsIsim0ed9ZZbWeb
+HTURSZCSwoLMV1CJEEVUSmBEjx+W/igkMsqSCAyCioqiB0WS2B2xf/3s/rmcc77v
+O985nOEFc30p/pNlWuWdt6e/+0fudtT4KtJvPGsQNNuoF4INQhWb+Vi1weJuqMoy
+hKAAIICEYclgACEZQGqKEoFU1DVm6IaoqQBjKmIMCYGSDoFMgSGpGIuyJouUYAAg
+BqqQI5hWNMycmGNFXS6LsI40wzQUAKhMqGJQxDQT6RJBhPHIREikOvaIlXbcY3Bz
+mhpneZbNczwIzdj7B/4/+66Z7UM0CfNWsgo00SA6JRIFKkUyBKIBFQ8YZ05U3c84
+OhLnlhtzBJ6ptXTmLdWbYrZaV1eXF7Ht/dVqnu2EOTPm2K6t29W8Vum6sXjQ47r1
+sRkw00KzMiHNihp8i5xRy5y4ZUeFIORI3bU8XUgon5MomOQI7GDMcljI8hAilWTA
+n9eH1XJJRURU0iTVJBBTA2EFY0VnCiPUhCYfT4YYygxhke9MFLFhEr4SgqFkQiJj
+XRa8wQ5EbSGIuU01zCXjVjiqujUOExrvDe5J8PlTfPMS53jX5UuZn/r35jJbkqaW
+NTn5H09dff9zdGj8a3DTh9Xp7o/DaCQpYVnp3TNJ2WNoa3VzW1n50pIvzTuf6AX2
+2ayWopslRRfHk2sTK/eZqDyU/el1jzvYfu5R78Tv4gWZC9sD5cqu7X3h0rrl0eu3
+B9esGi+8wu7n/losta1My9rQGh57tRG8fD5gVbxoXZF5ce2utN6nePXUaORE/sf+
+HTV9+QXHylqV976GjMalF7rTr+WmTAZyhwPHI9MZvsnL0nbJn9ZZGAmsW1T8YHqo
+q2mJ2NeTV7Z+uOHIp/ob224Zl9jA4y3f0O+HyZurfvjFNxWTQ11d7/Z+bp7ouHC0
+s+fLaLfTv+f89Vjhh9126qEVfwByYTeL
+=ThWd
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jsst
+
+==================================================================
+

@@ -1,0 +1,47 @@
+@import url(//fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+/*Hebrew*/
+.itemid-675 {
+  	font-family: 'Open Sans Hebrew', sans-serif;
+}
+
+#more ul {
+  	margin-right: 12px;
+  	text-align: justify;
+}
+
+#content p, 
+#multi p,
+#router .lead{
+  	text-align: right;
+}
+
+.mod-languages .caret {
+    margin-left: 10px;
+}
+
+div.mod-languages ul {
+    left: 0;
+    right: auto;
+}
+
+/*ToTop*/
+.site #scrollToTop {
+    right: auto;
+    left: 10px;
+}
+
+/**/
+
+ul.category-modulefeatures-home li:before {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+/*rwd fix*/
+@media only screen and (max-width: 768px){
+	.row-fluid [class*="span"]:first-child,
+	.row-fluid [class*="span"] {
+    	margin-right: inherit;
+	}
+}

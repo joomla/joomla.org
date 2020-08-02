@@ -516,7 +516,10 @@
     right: 20px;
     left: auto;
 }
-
+/*.numbers .extensions .number,
+.numbers .support .number {
+    margin-right: -25px;
+}*/
 .numbers .installations {
     background: #f27042;
 }
