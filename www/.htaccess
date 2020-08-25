@@ -216,6 +216,13 @@ RewriteRule .* index.php [L]
 		Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://cdn.joomla.org https://netdna.bootstrapcdn.com https://code.jquery.com; style-src 'self' 'sha256-yH7zvThq4rw6lFNI8vLqldptdQfD8zzTpahFU9rlSUU=' https://*.joomla.org https://fonts.googleapis.com; font-src 'self' https://cdn.joomla.org https://fonts.gstatic.com; img-src 'self' https://cdn.joomla.org; report-uri https://joomla.report-uri.com/r/t/csp/enforce"
 	</Files>
 </IfModule>
+## Since Joomla 3.9.21
+## Disable inline JavaScript when directly opening SVG files or embedding them with the object-tag
+<FilesMatch "\.svg$">
+  <IfModule mod_headers.c>
+    Header always set Content-Security-Policy "script-src 'none'"
+  </IfModule>
+</FilesMatch>
 ##################### Security Header
 
 # BEGIN cPanel-generated php ini directives, do not edit
