@@ -1,1 +1,5 @@
+#ads.txt joomla.org and sub-domains
 google.com, pub-1189370408998555, DIRECT, f08c47fec0942fa0
+buysellads.com, 496, DIRECT #buysellads
+buysellads.com, 496, RESELLER #buysellads
+contact=https://www.joomla.org/media-contact.html
