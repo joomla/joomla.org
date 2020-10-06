@@ -2,12 +2,17 @@ RewriteEngine off
 
 Options +Indexes
 
-<FilesMatch "\.(css|js|png|jpg|gif|pdf|php|ttf|ttc|otf|eot|woff)$">
+<FilesMatch "\.(css|js|png|jpg|gif|pdf|php|ttf|ttc|otf|eot|woff|woff2)$">
     Header set Cache-Control "max-age=300, must-revalidate"
 </FilesMatch>
 
 # One month Rochen Footer logo
 <filesMatch "rochen_footer_logo_white.png$">
+	Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+# One month joomla logo
+<filesMatch "Joomla_logo.png.png$">
 	Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
 
