@@ -57,6 +57,58 @@ RewriteRule ^(.*)$ $1.php [NC,L]
 Redirect 301 /content/view/689/79/ https://www.joomla.org/about-joomla/contribute-to-joomla.html
 Redirect 301 /about-joomla/the-project/working-groups.html https://www.joomla.org/about-joomla/the-project/project-teams.html
 
+# Redirect old Honor Roll page
+
+RewriteRule ^about-joomla/honor-roll/5446.*$ https://volunteers.joomla.org/joomlers/10893- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5726.*$ https://volunteers.joomla.org/joomlers/277- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5673.*$ https://volunteers.joomla.org/joomlers/273- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5702.*$ https://volunteers.joomla.org/joomlers/153- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5701.*$ https://volunteers.joomla.org/joomlers/683- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5698.*$ https://volunteers.joomla.org/joomlers/1898- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5696.*$ https://volunteers.joomla.org/joomlers/116- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5675.*$ https://volunteers.joomla.org/joomlers/1564- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5669.*$ https://volunteers.joomla.org/joomlers/110- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5668.*$ https://volunteers.joomla.org/joomlers/186- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5581.*$ https://volunteers.joomla.org/joomlers/131- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5579.*$ https://volunteers.joomla.org/joomlers/235- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5577.*$ https://volunteers.joomla.org/joomlers/160- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5576.*$ https://volunteers.joomla.org/joomlers/155- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5534.*$ https://volunteers.joomla.org/joomlers/67- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5525.*$ https://volunteers.joomla.org/joomlers/86- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5472.*$ https://volunteers.joomla.org [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5455.*$ https://volunteers.joomla.org/joomlers/324- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5450.*$ https://volunteers.joomla.org/joomlers/250- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5443.*$ https://volunteers.joomla.org/joomlers/60- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5442.*$ https://volunteers.joomla.org/joomlers/69- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5439.*$ https://volunteers.joomla.org/joomlers/64- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5433.*$ https://volunteers.joomla.org/joomlers/84- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5432.*$ https://volunteers.joomla.org/joomlers/74- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/32.*$ https://volunteers.joomla.org/joomlers/1974- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/25.*$ https://volunteers.joomla.org/joomlers/238- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/18.*$ https://volunteers.joomla.org/joomlers/115- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5733.*$ https://volunteers.joomla.org/joomlers/2554- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5745.*$  https://volunteers.joomla.org/joomlers/2553- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5697.*$ https://volunteers.joomla.org/joomlers/172- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5769.*$ https://volunteers.joomla.org/joomlers/1461- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5535.*$ https://volunteers.joomla.org/joomlers/677- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5451.*$ https://volunteers.joomla.org/joomlers/1008- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5314.*$ https://volunteers.joomla.org/joomlers/459- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5670.*$ https://volunteers.joomla.org/joomlers/673- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5512.*$ https://volunteers.joomla.org/joomlers/682- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5532.*$ https://volunteers.joomla.org/joomlers/537- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5520.*$ https://volunteers.joomla.org/joomlers/486- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5497.*$ https://volunteers.joomla.org/joomlers/569- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5528.*$ https://volunteers.joomla.org/joomlers/527- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5578.*$ https://volunteers.joomla.org/joomlers/522- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5671.*$ https://volunteers.joomla.org/joomlers/2044- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5526.*$ https://volunteers.joomla.org/joomlers/590- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5672.*$ https://volunteers.joomla.org/joomlers/485- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5473.*$ https://volunteers.joomla.org/joomlers/492- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5533.*$ https://volunteers.joomla.org/joomlers/583- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5527.*$ https://volunteers.joomla.org/joomlers/598- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5496.*$ https://volunteers.joomla.org/joomlers/439- [L,R=302]
+RewriteRule ^about-joomla/honor-roll/5623.*$ https://volunteers.joomla.org/joomlers/451- [L,R=302]
+
 RewriteCond %{REQUEST_URI} ^/announcements/general-news/5595(.*)$
 RewriteRule ^(.*)$ https://www.joomla.org/announcements/general-news/5626-joomla-community-magazine-september-2015.html [R=301,L]
 ###########################################
@@ -569,10 +621,3 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 ###########################################
-
-# php -- BEGIN cPanel-generated handler, do not edit
-# Set the “ea-php72” package as the default “PHP” programming language.
-<IfModule mime_module>
-  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
-</IfModule>
-# php -- END cPanel-generated handler, do not edit
