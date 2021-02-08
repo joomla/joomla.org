@@ -1,0 +1,68 @@
+##Please don't remove folders from disallow.  
+##The allows at the top allow any of the mimetypes listed to be crawled within any folder
+##using long-tail wildcards, these ignore the disallows for the folders below.
+##This gives full render for the search engines whilst preventing full crawls of system 
+##folders
+User-agent: *
+#THIS ALLOWS FULL RENDER AT ENGINES
+Allow: /*.js***************
+Allow: /*.css**************
+Allow: /*.png**************
+Allow: /*.jpg**************
+Allow: /*.jpeg**************
+Allow: /*.gif**************
+Allow: /*.eot**************
+Allow: /*.woff**************
+Allow: /*.ttf**************
+Allow: /*.svg**************
+Allow: /*.otf**************
+Allow: /*.pdf**************
+Allow: /*.PNG**************
+Allow: /*.JPG**************
+Allow: /*.JPEG**************
+Allow: /*.mp3**************
+#THESE FOLDERS SHOULD NEVER BE CRAWLED
+Disallow: /administrator/
+Disallow: /bin/
+Disallow: /cache/
+Disallow: /cgi-bin/
+Disallow: /cli/
+
+Disallow: /includes/
+Disallow: /language/
+Disallow: /layouts/
+Disallow: /libraries/
+
+
+
+
+Disallow: /tmp/
+# JSitemap entries
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=en
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=zh-cn
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=zh-tw
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=id
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=da
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=de
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=et
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=es
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=co
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=fr
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=ca
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=it
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=ja
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=hi
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=hu
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=nl
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=nb
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=fa
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=pl
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=pt
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=br
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=ro
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=ru
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=sr
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=si
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=sk
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=sl
+#Sitemap: https://www.joomla.org/3/index.php?option=com_jmap&view=sitemap&format=hreflang&lang=th
