@@ -42,3 +42,5 @@ Disallow: /templates/
 Disallow: /t3-assets/
 Disallow: /tmp/
 Disallow: /videos/
+
+Sitemap: https://www.joomla.org/sitemap
