@@ -650,19 +650,6 @@
 
 /* Custom CSS */
 
-/*Asenine*/
-@font-face {
-    font-family: 'Asenine Wide';
-    src: url('../fonts/ASENW___.eot');
-    src: url('../fonts/ASENW___.eot?#iefix') format('embedded-opentype'), url('../fonts/ASENW___.woff') format('woff'), url('../fonts/ASENW___.ttf') format('truetype'), url('../fonts/ASENW___.svg#ASENW___') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-header .page-title a {
-    font-family: Asenine Wide;
-    font-size: 40px;
-}
-
 /* Testing - active menu item fixes */
 ul.nav.menu.nav-stacked.nav-tabs .current a {
     font-weight: bold;
