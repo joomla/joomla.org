@@ -122,57 +122,58 @@ RewriteRule ^(.*)$ https://www.joomla.org/announcements/general-news/5626-joomla
 	# Default expiration: 1 hour after request
 	ExpiresDefault "now plus 1 hour"
 
-	# CSS and JS expiration: 1 week after request
-	ExpiresByType text/css "now plus 1 week"
-	ExpiresByType application/javascript "now plus 1 week"
-	ExpiresByType application/x-javascript "now plus 1 week"
+	# CSS and JS expiration:
+	ExpiresByType text/css "now plus 2 week"
+	ExpiresByType application/javascript "now plus 2 week"
+	ExpiresByType application/x-javascript "now plus 2 week"
 
-	# Image files expiration: 1 month after request
-	ExpiresByType image/bmp "now plus 1 month"
-	ExpiresByType image/gif "now plus 1 month"
-	ExpiresByType image/jpeg "now plus 1 month"
-	ExpiresByType image/jp2 "now plus 1 month"
-	ExpiresByType image/pipeg "now plus 1 month"
-	ExpiresByType image/png "now plus 1 month"
-	ExpiresByType image/svg+xml "now plus 1 month"
-	ExpiresByType image/tiff "now plus 1 month"
-	ExpiresByType image/vnd.microsoft.icon "now plus 1 month"
-	ExpiresByType image/x-icon "now plus 1 month"
-	ExpiresByType image/ico "now plus 1 month"
-	ExpiresByType image/icon "now plus 1 month"
-	ExpiresByType text/ico "now plus 1 month"
-	ExpiresByType application/ico "now plus 1 month"
-	ExpiresByType image/vnd.wap.wbmp "now plus 1 month"
-	ExpiresByType application/vnd.wap.wbxml "now plus 1 month"
-	ExpiresByType application/smil "now plus 1 month"
+	# Image files expiration:
+	ExpiresByType image/bmp "now plus 6 month"
+	ExpiresByType image/gif "now plus 6 month"
+	ExpiresByType image/jpeg "now plus 6 month"
+	ExpiresByType image/jp2 "now plus 6 month"
+	ExpiresByType image/pipeg "now plus 6 month"
+	ExpiresByType image/png "now plus 6 month"
+	ExpiresByType image/webp "now plus 6 month"
+	ExpiresByType image/svg+xml "now plus 6 month"
+	ExpiresByType image/tiff "now plus 6 month"
+	ExpiresByType image/vnd.microsoft.icon "now plus 6 month"
+	ExpiresByType image/x-icon "now plus 6 month"
+	ExpiresByType image/ico "now plus 1 year"
+	ExpiresByType image/icon "now plus 1 year"
+	ExpiresByType text/ico "now plus 1 year"
+	ExpiresByType application/ico "now plus 1 year"
+	ExpiresByType image/vnd.wap.wbmp "now plus 6 month"
+	ExpiresByType application/vnd.wap.wbxml "now plus 6 month"
+	ExpiresByType application/smil "now plus 6 month"
 
-	# Font files expiration: 1 week after request
-	ExpiresByType application/vnd.ms-fontobject "now plus 1 week"
-	ExpiresByType application/x-font-ttf "now plus 1 week"
-	ExpiresByType application/x-font-opentype "now plus 1 week"
-	ExpiresByType application/x-font-woff "now plus 1 week"
-	ExpiresByType font/woff2 "now plus 1 week"
-	ExpiresByType image/svg+xml "now plus 1 week"
+	# Font files expiration:
+	ExpiresByType application/vnd.ms-fontobject "now plus 6 month"
+	ExpiresByType application/x-font-ttf "now plus 6 month"
+	ExpiresByType application/x-font-opentype "now plus 6 month"
+	ExpiresByType application/x-font-woff "now plus 6 month"
+	ExpiresByType font/woff2 "now plus 6 month"
+	ExpiresByType image/svg+xml "now plus 6 month"
 
-	# Audio files expiration: 1 month after request
-	ExpiresByType audio/basic "now plus 1 month"
-	ExpiresByType audio/mid "now plus 1 month"
-	ExpiresByType audio/midi "now plus 1 month"
-	ExpiresByType audio/mpeg "now plus 1 month"
-	ExpiresByType audio/x-aiff "now plus 1 month"
-	ExpiresByType audio/x-mpegurl "now plus 1 month"
-	ExpiresByType audio/x-pn-realaudio "now plus 1 month"
-	ExpiresByType audio/x-wav "now plus 1 month"
+	# Audio files expiration:
+	ExpiresByType audio/basic "now plus 6 month"
+	ExpiresByType audio/mid "now plus 6 month"
+	ExpiresByType audio/midi "now plus 6 month"
+	ExpiresByType audio/mpeg "now plus 6 month"
+	ExpiresByType audio/x-aiff "now plus 6 month"
+	ExpiresByType audio/x-mpegurl "now plus 6 month"
+	ExpiresByType audio/x-pn-realaudio "now plus 6 month"
+	ExpiresByType audio/x-wav "now plus 6 month"
 
 	# Movie files expiration: 1 month after request
-	ExpiresByType application/x-shockwave-flash "now plus 1 month"
-	ExpiresByType x-world/x-vrml "now plus 1 month"
-	ExpiresByType video/x-msvideo "now plus 1 month"
-	ExpiresByType video/mpeg "now plus 1 month"
-	ExpiresByType video/mp4 "now plus 1 month"
-	ExpiresByType video/quicktime "now plus 1 month"
-	ExpiresByType video/x-la-asf "now plus 1 month"
-	ExpiresByType video/x-ms-asf "now plus 1 month"
+	ExpiresByType application/x-shockwave-flash "now plus 6 month"
+	ExpiresByType x-world/x-vrml "now plus 6 month"
+	ExpiresByType video/x-msvideo "now plus 6 month"
+	ExpiresByType video/mpeg "now plus 6 month"
+	ExpiresByType video/mp4 "now plus 6 month"
+	ExpiresByType video/quicktime "now plus 6 month"
+	ExpiresByType video/x-la-asf "now plus 6 month"
+	ExpiresByType video/x-ms-asf "now plus 6 month"
 </IfModule>
 
 	# Disable caching of administrator/index.php
@@ -313,7 +314,6 @@ RewriteRule ^(.*)$ https://www.joomla.org/announcements/general-news/5626-joomla
 	SetEnvIf user-agent "WWW-Mechanize" stayout=1
 	SetEnvIf user-agent "WWWOFFLE" stayout=1
 	SetEnvIf user-agent "Xaldon WebSpider" stayout=1
-	SetEnvIf user-agent "Yandex" stayout=1
 	SetEnvIf user-agent "Zeus" stayout=1
 	SetEnvIf user-agent "zmeu" stayout=1
 	SetEnvIf user-agent "CazoodleBot" stayout=1
@@ -535,12 +535,12 @@ RewriteRule .* - [F]
 # =============== Backend ===============
 RewriteRule ^administrator/?$ - [L]
 RewriteRule ^administrator/index\.(php|html?)$ - [L]
-RewriteRule ^administrator/(components|modules|templates|images|plugins)/.*\.(jpe|jpg|jpeg|jp2|jpe2|png|gif|bmp|css|js|swf|html|mpg|mp3|mpeg|mp4|avi|wav|ogg|ogv|xls|xlsx|doc|docx|ppt|pptx|zip|rar|pdf|xps|txt|7z|svg|odt|ods|odp|flv|mov|htm|ttf|woff|woff2|eot|ico|JPG|JPEG|PNG|GIF|CSS|JS|TTF|WOFF|WOFF2|EOT)$ - [L]
+RewriteRule ^administrator/(components|modules|templates|images|plugins)/.*\.(jpe|jpg|jpeg|jp2|jpe2|png|gif|bmp|webp|css|js|swf|html|mpg|mp3|mpeg|mp4|avi|wav|ogg|ogv|xls|xlsx|doc|docx|ppt|pptx|zip|rar|pdf|xps|txt|7z|svg|odt|ods|odp|flv|mov|htm|ttf|woff|woff2|eot|ico|JPG|JPEG|PNG|GIF|WEBP|CSS|JS|TTF|WOFF|WOFF2|EOT)$ - [L]
 RewriteRule ^administrator/ - [F]
 
 # =============== Frontend ===============
 ## Allow limited access for certain directories with client-accessible content
-RewriteRule ^(components|modules|templates|images|videos|plugins|media|libraries|cache|media/jui/fonts)/.*\.(jpe|jpg|jpeg|jp2|jpe2|svg|png|gif|bmp|css|js|swf|html|mpg|mp3|mpeg|mp4|avi|wav|ogg|ogv|xls|xlsx|doc|docx|ppt|pptx|zip|rar|pdf|xps|txt|7z|svg|odt|ods|odp|flv|mov|ico|htm|ttf|woff|woff2|eot)$ - [L,NC]
+RewriteRule ^(components|modules|templates|images|videos|plugins|media|libraries|cache|media/jui/fonts)/.*\.(jpe|jpg|jpeg|jp2|jpe2|svg|png|gif|bmp|webp|css|js|swf|html|mpg|mp3|mpeg|mp4|avi|wav|ogg|ogv|xls|xlsx|doc|docx|ppt|pptx|zip|rar|pdf|xps|txt|7z|svg|odt|ods|odp|flv|mov|ico|htm|ttf|woff|woff2|eot)$ - [L,NC]
 RewriteRule ^(components|modules|templates|images|videos|plugins|media|libraries|cache|media/jui/fonts)/ - [F]
 ## Disallow front-end access for certain Joomla! system directories (unless access to their files is allowed above)
 RewriteRule ^(cache|includes|language|logs|log|tmp)/ - [F]
