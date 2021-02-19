@@ -80,7 +80,7 @@ $iTitle = isset($feed->imagetitle) ? $feed->imagetitle : null;
 					?>
 					<?php if (!empty($uri)) : ?>
 						<h4 class="feed-link">
-							<a href="<?php echo htmlspecialchars($uri, ENT_COMPAT, 'UTF-8'); ?>" target="_blank"><?php echo $entry->title; ?></a>
+							<a href="<?php echo htmlspecialchars($uri, ENT_COMPAT, 'UTF-8'); ?>" target="_blank" rel="noopener"><?php echo $entry->title; ?></a>
 						</h4>
 					<?php else : ?>
 						<h4 class="feed-link"><?php echo $title; ?></h4>

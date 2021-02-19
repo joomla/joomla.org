@@ -63,7 +63,7 @@ else
 		{
 			?>
 					<h2 class="<?php echo $direction; ?>">
-						<a href="<?php echo htmlspecialchars($rssurl); ?>" target="_blank">
+						<a href="<?php echo htmlspecialchars($rssurl); ?>" target="_blank" rel="noopener">
 						<?php echo $feed->title; ?></a>
 					</h2>
 			<?php
@@ -101,7 +101,7 @@ else
 				<li>
 					<?php if (!empty($uri)) : ?>
 						<span class="feed-link">
-						<a href="<?php echo htmlspecialchars($uri); ?>" target="_blank">
+						<a href="<?php echo htmlspecialchars($uri); ?>" target="_blank" rel="noopener">
 						<?php echo $feed[$i]->title; ?></a></span>
 					<?php else : ?>
 						<span class="feed-link"><?php  echo $feed[$i]->title; ?></span>
