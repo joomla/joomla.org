@@ -123,9 +123,9 @@ RewriteRule ^(.*)$ https://www.joomla.org/announcements/general-news/5626-joomla
 	ExpiresDefault "now plus 1 hour"
 
 	# CSS and JS expiration:
-	ExpiresByType text/css "now plus 2 week"
-	ExpiresByType application/javascript "now plus 2 week"
-	ExpiresByType application/x-javascript "now plus 2 week"
+	ExpiresByType text/css "now plus 6 month"
+	ExpiresByType application/javascript "now plus 6 month"
+	ExpiresByType application/x-javascript "now plus 6 month"
 
 	# Image files expiration:
 	ExpiresByType image/bmp "now plus 6 month"
@@ -152,7 +152,7 @@ RewriteRule ^(.*)$ https://www.joomla.org/announcements/general-news/5626-joomla
 	ExpiresByType application/x-font-ttf "now plus 6 month"
 	ExpiresByType application/x-font-opentype "now plus 6 month"
 	ExpiresByType application/x-font-woff "now plus 6 month"
-	ExpiresByType font/woff2 "now plus 6 month"
+	ExpiresByType application/font-woff2 "now plus 6 month"
 	ExpiresByType image/svg+xml "now plus 6 month"
 
 	# Audio files expiration:

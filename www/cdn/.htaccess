@@ -2,25 +2,6 @@ RewriteEngine off
 
 Options +Indexes
 
-<FilesMatch "\.(css|js|png|jpg|gif|pdf|php|ttf|ttc|otf|eot|woff|woff2)$">
-    Header set Cache-Control "max-age=300, must-revalidate"
-</FilesMatch>
-
-# One month Rochen Footer logo
-<filesMatch "rochen_footer_logo_white.png$">
-	Header set Cache-Control "max-age=2628000, public"
-</filesMatch>
-
-# One month joomla logo
-<filesMatch "Joomla_logo.png.png$">
-	Header set Cache-Control "max-age=2628000, public"
-</filesMatch>
-
-# One week Template CSS
-<filesMatch "template_3.0.0.min.css">
-	Header set Cache-Control "max-age=604800, public"
-</filesMatch>
-
 # ----------------------------------------------------------------------
 # Webfont access
 # ----------------------------------------------------------------------
@@ -28,7 +9,7 @@ Options +Indexes
 # Alternatively you could only whitelist your
 # subdomains like "subdomain.example.com".
 <IfModule mod_headers.c>
-  <FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css|css)$">
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css)$">
     Header set Access-Control-Allow-Origin "*"
   </FilesMatch>
 </IfModule>
@@ -43,52 +24,59 @@ Options +Indexes
 	# Default expiration: 1 hour after request
 	ExpiresDefault "now plus 1 hour"
 
-	# CSS and JS expiration: 1 week after request
-	ExpiresByType text/css "now plus 1 week"
-	ExpiresByType application/javascript "now plus 1 week"
-	ExpiresByType application/x-javascript "now plus 1 week"
+	# CSS and JS expiration:
+	ExpiresByType text/css "now plus 1 year"
+	ExpiresByType application/javascript "now plus 1 year"
+	ExpiresByType application/x-javascript "now plus 1 year"
 
-	# Image files expiration: 1 month after request
-	ExpiresByType image/bmp "now plus 1 month"
-	ExpiresByType image/gif "now plus 1 month"
-	ExpiresByType image/jpeg "now plus 1 month"
-	ExpiresByType image/jp2 "now plus 1 month"
-	ExpiresByType image/pipeg "now plus 1 month"
-	ExpiresByType image/png "now plus 1 month"
-	ExpiresByType image/svg+xml "now plus 1 month"
-	ExpiresByType image/tiff "now plus 1 month"
-	ExpiresByType image/vnd.microsoft.icon "now plus 1 month"
-	ExpiresByType image/x-icon "now plus 1 month"
-	ExpiresByType image/ico "now plus 1 month"
-	ExpiresByType image/icon "now plus 1 month"
-	ExpiresByType text/ico "now plus 1 month"
-	ExpiresByType application/ico "now plus 1 month"
-	ExpiresByType image/vnd.wap.wbmp "now plus 1 month"
-	ExpiresByType application/vnd.wap.wbxml "now plus 1 month"
-	ExpiresByType application/smil "now plus 1 month"
+	# Image files expiration:
+	ExpiresByType image/bmp "now plus 6 month"
+	ExpiresByType image/gif "now plus 6 month"
+	ExpiresByType image/jpeg "now plus 6 month"
+	ExpiresByType image/jp2 "now plus 6 month"
+	ExpiresByType image/pipeg "now plus 6 month"
+	ExpiresByType image/png "now plus 6 month"
+	ExpiresByType image/svg+xml "now plus 6 month"
+	ExpiresByType image/tiff "now plus 6 month"
+	ExpiresByType image/vnd.microsoft.icon "now plus 6 month"
+	ExpiresByType image/x-icon "now plus 6 month"
+	ExpiresByType image/ico "now plus 6 month"
+	ExpiresByType image/icon "now plus 6 month"
+	ExpiresByType text/ico "now plus 1 year"
+	ExpiresByType application/ico "now plus 1 year"
+	ExpiresByType image/vnd.wap.wbmp "now plus 6 month"
+	ExpiresByType application/vnd.wap.wbxml "now plus 6 month"
+	ExpiresByType application/smil "now plus 6 month"
 
-	# Audio files expiration: 1 month after request
-	ExpiresByType audio/basic "now plus 1 month"
-	ExpiresByType audio/mid "now plus 1 month"
-	ExpiresByType audio/midi "now plus 1 month"
-	ExpiresByType audio/mpeg "now plus 1 month"
-	ExpiresByType audio/x-aiff "now plus 1 month"
-	ExpiresByType audio/x-mpegurl "now plus 1 month"
-	ExpiresByType audio/x-pn-realaudio "now plus 1 month"
-	ExpiresByType audio/x-wav "now plus 1 month"
+	# Font files expiration:
+	ExpiresByType application/vnd.ms-fontobject "now plus 6 month"
+	ExpiresByType application/x-font-ttf "now plus 6 month"
+	ExpiresByType application/x-font-opentype "now plus 6 month"
+	AddType application/x-font-woff .woff
+	ExpiresByType application/x-font-woff "now plus 6 month"
+	ExpiresByType application/font-woff2 "now plus 6 month"
+	ExpiresByType image/svg+xml "now plus 6 month"
+	
+	# Audio files expiration:
+	ExpiresByType audio/basic "now plus 1 year"
+	ExpiresByType audio/mid "now plus 1 year"
+	ExpiresByType audio/midi "now plus 1 year"
+	ExpiresByType audio/mpeg "now plus 1 year"
+	ExpiresByType audio/x-aiff "now plus 1 year"
+	ExpiresByType audio/x-mpegurl "now plus 1 year"
+	ExpiresByType audio/x-pn-realaudio "now plus 1 year"
+	ExpiresByType audio/x-wav "now plus 1 year"
 
-	# Movie files expiration: 1 month after request
-	ExpiresByType application/x-shockwave-flash "now plus 1 month"
-	ExpiresByType x-world/x-vrml "now plus 1 month"
-	ExpiresByType video/x-msvideo "now plus 1 month"
-	ExpiresByType video/mpeg "now plus 1 month"
-	ExpiresByType video/mp4 "now plus 1 month"
-	ExpiresByType video/quicktime "now plus 1 month"
-	ExpiresByType video/x-la-asf "now plus 1 month"
-	ExpiresByType video/x-ms-asf "now plus 1 month"
+	# Movie files expiration:
+	ExpiresByType application/x-shockwave-flash "now plus 1 year"
+	ExpiresByType x-world/x-vrml "now plus 1 year"
+	ExpiresByType video/x-msvideo "now plus 1 year"
+	ExpiresByType video/mpeg "now plus 1 year"
+	ExpiresByType video/mp4 "now plus 1 year"
+	ExpiresByType video/quicktime "now plus 1 year"
+	ExpiresByType video/x-la-asf "now plus 1 year"
+	ExpiresByType video/x-ms-asf "now plus 1 year"
 </IfModule>
-###########################################
-
 
 ###########################################
 # == Automatic compression of resources ==
