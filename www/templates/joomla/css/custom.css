@@ -766,7 +766,8 @@ dd.modified {
 .form-horizontal textarea {
     width: 75%;
 }
-#jform_contact_email_copy {
+#jform_contact_email_copy,
+html body.site.com_users.view-login div.login input#remember.inputbox {
     width: auto;
 }
 .form-horizontal .form-actions {
