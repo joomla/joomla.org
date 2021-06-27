@@ -55,7 +55,8 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [NC,L]
 
 Redirect 301 /content/view/689/79/ https://www.joomla.org/about-joomla/contribute-to-joomla.html
-Redirect 301 /about-joomla/the-project/working-groups.html https://www.joomla.org/about-joomla/the-project/project-teams.html
+Redirect 301 /about-joomla/the-project/working-groups.html https://volunteers.joomla.org/teams
+Redirect 301 /about-joomla/the-project/project-teams.html https://volunteers.joomla.org/teams
 
 # Redirect old Honor Roll page
 
@@ -157,6 +158,12 @@ RewriteRule ^about-joomla/honor-roll/5496.*$ https://volunteers.joomla.org/jooml
 RewriteRule ^about-joomla/the-project/honor-roll/5496.*$ https://volunteers.joomla.org/joomlers/439- [L,R=301]
 RewriteRule ^about-joomla/honor-roll/5623.*$ https://volunteers.joomla.org/joomlers/451- [L,R=301]
 RewriteRule ^about-joomla/the-project/honor-roll/5623.*$ https://volunteers.joomla.org/joomlers/451- [L,R=301]
+# Redirect leftover urls
+RewriteRule ^about-joomla/honor-roll/.*$ https://volunteers.joomla.org/board-of-directors#honorroll [L,R=301]
+RewriteRule ^about-joomla/honor-roll.html$ https://volunteers.joomla.org/board-of-directors#honorroll [L,R=301]
+RewriteRule ^about-joomla/the-project/leadership-team/.*$ https://volunteers.joomla.org/joomlers/ [L,R=301]
+RewriteRule ^announcements/general-news/6-joomla-leadership-team/.*$ https://volunteers.joomla.org/joomlers/ [L,R=301]
+RewriteRule ^component/content/category/6-joomla-leadership-team.html https://volunteers.joomla.org/joomlers/ [L,R=301]
 
 RewriteCond %{REQUEST_URI} ^/announcements/general-news/5595(.*)$
 RewriteRule ^(.*)$ https://www.joomla.org/announcements/general-news/5626-joomla-community-magazine-september-2015.html [R=301,L]
