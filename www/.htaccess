@@ -164,6 +164,7 @@ RewriteRule ^about-joomla/honor-roll.html$ https://volunteers.joomla.org/board-o
 RewriteRule ^about-joomla/the-project/leadership-team/.*$ https://volunteers.joomla.org/joomlers/ [L,R=301]
 RewriteRule ^announcements/general-news/6-joomla-leadership-team/.*$ https://volunteers.joomla.org/joomlers/ [L,R=301]
 RewriteRule ^component/content/category/6-joomla-leadership-team.html https://volunteers.joomla.org/joomlers/ [L,R=301]
+RewriteRule ^joomla-press-official-books.html https://community.joomla.org/joomla-training.html [L,R=301]
 
 RewriteCond %{REQUEST_URI} ^/announcements/general-news/5595(.*)$
 RewriteRule ^(.*)$ https://www.joomla.org/announcements/general-news/5626-joomla-community-magazine-september-2015.html [R=301,L]
