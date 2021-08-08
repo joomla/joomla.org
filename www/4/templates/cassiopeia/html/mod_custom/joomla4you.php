@@ -26,7 +26,7 @@ if ($params->get('backgroundimage'))
 
 ?>
 
-<div id="<?php echo $modId; ?>" class="mod-custom custom">
-  <h2 class="text-white display-3 fw-bold"><?php echo JText::_('J4LANDING_J4ALL_H2'); ?></h2>
-	<?php echo JText::_('J4LANDING_J4ALL_DESC'); ?>
+<div id="<?php echo $modId; ?>" class="mod-custom container custom">
+  <h2 class="text-white display-3 fw-bold"><?php echo JText::_('J4LANDING_J4YOU_H2'); ?></h2>
+	<?php echo JText::_('J4LANDING_J4YOU_DESC'); ?>
 </div>

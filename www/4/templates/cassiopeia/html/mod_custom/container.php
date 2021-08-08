@@ -26,8 +26,6 @@ if ($params->get('backgroundimage'))
 
 ?>
 
-<div id="<?php echo $modId; ?>" class="mod-custom custom">
-	<p><a class="btn btn-primary" href="https://joomla.crowdin.com/cms" target="_blank" rel="noopener noreferrer"><?php echo JText::_('J4LANDING_TRANSLATIONS_BUTTON'); ?></a></p>
-<p class="small"><?php echo JText::_('J4LANDING_TRANSLATIONS_SPONSOR'); ?></p>
-<p class="small"><a title="Crowdin" href="https://crowdin.com/enterprise" target="_blank" rel="noopener noreferrer"><img class="pull-right" title="Crowdin" src="https://www.joomla.org/images/partners/crowdin.png" alt="crowdin" width="200" height="39" /></a></p>
+<div id="<?php echo $modId; ?>" class="mod-custom container custom">
+	<?php echo $module->content; ?>
 </div>
