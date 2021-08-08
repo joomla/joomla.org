@@ -7,6 +7,6 @@ base_url: "https://joomla.crowdin.com"
 preserve_hierarchy: true
 
 files:
-  - source: /language/overrides/en-GB.override.ini
+  - source: /4/language/overrides/en-GB.override.ini
     dest: 'Joomla! Org/j4landing.ini'
-    translation: /language/overrides/%locale%.override.ini
+    translation: /4/language/overrides/%locale%.override.ini
