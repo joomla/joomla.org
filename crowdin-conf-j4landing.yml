@@ -1,0 +1,12 @@
+# Project Public Identifier: joomla-official-websites
+project_id: 100
+api_token_env: CROWDIN_PERSONAL_TOKEN
+base_path: www
+base_url: "https://joomla.crowdin.com"
+
+preserve_hierarchy: true
+
+files:
+  - source: /language/overrides/en-GB.override.ini
+    dest: 'Joomla! Org/j4landing.ini'
+    translation: /language/overrides/%locale%.override.ini
