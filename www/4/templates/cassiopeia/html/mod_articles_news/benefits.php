@@ -39,7 +39,7 @@ $lang = Factory::getLanguage();
 			$title = implode('<br class="d-none d-lg-inline"> ', explode(' ', $title));
 
 			if ($images->get('image_intro')) :
-				$title = HTMLHelper::_('image', $images->get('image_intro'), $images->get('image_alt')) . '<br>' . $title;
+				$title = '<div class="benefits-tabimage">' . HTMLHelper::_('image', $images->get('image_intro'), $images->get('image_alt')) . '</div>' . $title;
 			endif;
 		?>
 		<?php echo HTMLHelper::_('uitab.addTab', 'joomla4Benefit', 'joomla4Benefit-' . (int) $item->id, $title); ?>

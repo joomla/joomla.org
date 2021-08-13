@@ -10,6 +10,8 @@
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Language\Text;
 use Joomla\Registry\Registry;
 
 require_once JPATH_THEMES . '/cassiopeia/Helper/Template.php';
@@ -19,8 +21,22 @@ $tparams = $template->params ?? new Registry;
 
 $language = Factory::getLanguage()->getTag();
 
-echo '<div class="container">';
+HTMLHelper::_('bootstrap.collapse');
 
-echo JoomlaTemplateHelper::getTemplateMenu($language, (bool) $tparams->get('useCdn', '0'));
+?>
 
-echo '</div>';
+<div class="container">
+
+    <nav class="navbar navbar-expand-md">
+        <button class="ms-auto my-2 navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbar<?php echo $module->id; ?>" aria-controls="navbar<?php echo $module->id; ?>" aria-expanded="false" aria-label="<?php echo Text::_('MOD_MENU_TOGGLE'); ?>">
+            <span class="icon-menu" aria-hidden="true"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar<?php echo $module->id; ?>">
+
+        <?php echo JoomlaTemplateHelper::getTemplateMenu($language, (bool) $tparams->get('useCdn', '1')); ?>
+
+        </div>
+
+    </nav>
+
+</div>
