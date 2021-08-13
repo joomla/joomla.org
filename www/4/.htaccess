@@ -87,7 +87,9 @@ RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/4/$1 [L,R=301]
 	ExpiresByType application/vnd.ms-fontobject "now plus 6 month"
 	ExpiresByType application/x-font-ttf "now plus 6 month"
 	ExpiresByType application/x-font-opentype "now plus 6 month"
+	AddType application/x-font-woff .woff
 	ExpiresByType application/x-font-woff "now plus 6 month"
+	AddType application/font-woff2 .woff2
 	ExpiresByType application/font-woff2 "now plus 6 month"
 	ExpiresByType image/svg+xml "now plus 6 month"
 
