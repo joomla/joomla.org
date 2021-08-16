@@ -10,6 +10,7 @@
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\Helper\ModuleHelper;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
 use Joomla\Registry\Registry;
@@ -23,6 +24,21 @@ $language = Factory::getLanguage()->getTag();
 
 HTMLHelper::_('bootstrap.collapse');
 
+$document = Factory::getDocument();
+$renderer = $document->loadRenderer('module');
+
+$modules  = ModuleHelper::getModules('position-0');
+
+ob_start();
+
+foreach ($modules as $module) :
+    echo $renderer->render($module, $params);
+endforeach;
+
+$replace = ob_get_clean();
+
+$search = '<jdoc:include type="modules" name="position-0" style="none" />';
+
 ?>
 
 <div class="container">
@@ -33,7 +49,7 @@ HTMLHelper::_('bootstrap.collapse');
         </button>
         <div class="collapse navbar-collapse" id="navbar<?php echo $module->id; ?>">
 
-        <?php echo JoomlaTemplateHelper::getTemplateMenu($language, (bool) $tparams->get('useCdn', '1')); ?>
+        <?php echo str_replace($search, $replace, JoomlaTemplateHelper::getTemplateMenu($language, (bool) $tparams->get('useCdn', '1'))); ?>
 
         </div>
 

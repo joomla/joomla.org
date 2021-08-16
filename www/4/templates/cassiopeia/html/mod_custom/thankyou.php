@@ -30,5 +30,4 @@ if ($params->get('backgroundimage'))
   <h3 class=" mb-4"><?php echo JText::_('J4LANDING_THANKYOU_H3'); ?></h3>
 	<?php echo JText::_('J4LANDING_THANKYOU_DESC'); ?>
 <p> </p>
-<p><a class="btn btn-light" href="#"><?php echo JText::_('J4LANDING_THANKYOU_BUTTON'); ?></a></p>
 </div>
