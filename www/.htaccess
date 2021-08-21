@@ -165,6 +165,8 @@ RewriteRule ^about-joomla/the-project/leadership-team/.*$ https://volunteers.joo
 RewriteRule ^announcements/general-news/6-joomla-leadership-team/.*$ https://volunteers.joomla.org/joomlers/ [L,R=301]
 RewriteRule ^component/content/category/6-joomla-leadership-team.html https://volunteers.joomla.org/joomlers/ [L,R=301]
 RewriteRule ^joomla-press-official-books.html https://community.joomla.org/joomla-training.html [L,R=301]
+# Redirect requested removals
+RewriteRule ^announcements/37-team-news/264-robin-muilwijk-joins-development-team.html https://www.joomla.org [L,R=301]
 
 RewriteCond %{REQUEST_URI} ^/announcements/general-news/5595(.*)$
 RewriteRule ^(.*)$ https://www.joomla.org/announcements/general-news/5626-joomla-community-magazine-september-2015.html [R=301,L]
@@ -573,3 +575,16 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 ###########################################
+### LITESPEED_CACHE_START - Do not remove this line
+<IfModule LiteSpeed>
+CacheLookup on
+## Uncomment the following directives if you has a separate mobile view
+##RewriteEngine On
+##RewriteCond %{HTTP_USER_AGENT} Mobile|Android|Silk/|Kindle|BlackBerry|Opera\ Mini|Opera\ Mobi [NC] 
+##RewriteRule .* - [E=Cache-Control:vary=ismobile]
+## Uncomment the following directives to enable login remember me
+##RewriteCond %{HTTP_COOKIE} ^.*joomla_remember_me.*$
+##RewriteCond %{HTTP_COOKIE} !^.*_lscache_vary.*$
+##RewriteRule .* - [E=cache-control:no-cache]
+</IfModule>
+### LITESPEED_CACHE_END
