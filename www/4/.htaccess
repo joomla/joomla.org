@@ -31,8 +31,8 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ###########################################
 # ========== Special redirects ===========
 ##### Redirect non-www to www -- BEGIN
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R,L]
+RewriteCond %{HTTP_HOST} !^www.joomla.org$ [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/4/$1 [L,R=301]
 ##### Redirect non-www to www -- END
 
 ##### Redirect index.php to / -- BEGIN
@@ -41,13 +41,6 @@ RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
 RewriteCond %{SERVER_PORT}>s ^(443>(s)|[0-9]+>s)$
 RewriteRule ^index\.php$ http%2://%{HTTP_HOST}/ [R,L]
 ##### Redirect index.php to / -- END
-
-###########################################
-# ========== Add redirects here ===========
-# Redirect joomla.org/4/* to www.joomla.org/4/*
-RewriteCond %{HTTP_HOST} !^www.joomla.org$ [NC]
-RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/4/$1 [L,R=301]
-###########################################
 
 ###########################################
 # === Optimal default expiration time ===
@@ -378,7 +371,7 @@ RewriteRule .* - [F]
 # Update Your Joomla! Directory (just / for root).
 ##
 
-RewriteBase /4
+RewriteBase /4/
 
 ## Begin - Joomla! core SEF Section.
 	#
@@ -408,3 +401,17 @@ RewriteBase /4
 	RewriteRule .* index.php [L]
 	#
 	## End - Joomla! core SEF Section.
+
+### LITESPEED_CACHE_START - Do not remove this line
+<IfModule LiteSpeed>
+CacheLookup on
+## Uncomment the following directives if you has a separate mobile view
+##RewriteEngine On
+##RewriteCond %{HTTP_USER_AGENT} Mobile|Android|Silk/|Kindle|BlackBerry|Opera\ Mini|Opera\ Mobi [NC] 
+##RewriteRule .* - [E=Cache-Control:vary=ismobile]
+## Uncomment the following directives to enable login remember me
+##RewriteCond %{HTTP_COOKIE} ^.*joomla_remember_me.*$
+##RewriteCond %{HTTP_COOKIE} !^.*_lscache_vary.*$
+##RewriteRule .* - [E=cache-control:no-cache]
+</IfModule>
+### LITESPEED_CACHE_END
