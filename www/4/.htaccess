@@ -32,7 +32,7 @@ RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # ========== Special redirects ===========
 ##### Redirect non-www to www -- BEGIN
 RewriteCond %{HTTP_HOST} !^www.joomla.org$ [NC]
-RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/4/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
 ##### Redirect non-www to www -- END
 
 ##### Redirect index.php to / -- BEGIN
