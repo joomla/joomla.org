@@ -164,7 +164,8 @@ RewriteRule ^about-joomla/honor-roll.html$ https://volunteers.joomla.org/board-o
 RewriteRule ^about-joomla/the-project/leadership-team/.*$ https://volunteers.joomla.org/joomlers/ [L,R=301]
 RewriteRule ^announcements/general-news/6-joomla-leadership-team/.*$ https://volunteers.joomla.org/joomlers/ [L,R=301]
 RewriteRule ^component/content/category/6-joomla-leadership-team.html https://volunteers.joomla.org/joomlers/ [L,R=301]
-RewriteRule ^joomla-press-official-books.html https://community.joomla.org/joomla-training.html [L,R=301]
+RewriteRule ^joomla-press-official-books.html https://docs.joomla.org/Special:MyLanguage/Tutorials:Beginners [L,R=301]
+
 # Redirect requested removals
 RewriteRule ^announcements/37-team-news/264-robin-muilwijk-joins-development-team.html https://www.joomla.org [L,R=301]
 RewriteRule ^announcements/team-news/3602-new-and-rejuvenated-core-team-members.html https://www.joomla.org [L,R=301]
