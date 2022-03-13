@@ -16,7 +16,7 @@ $data = json_decode($result, true);
 
 foreach ($data['branches'] as $branch)
 {
-    if ($branch['branch'] === 'Joomla! 3')
+    if ($branch['branch'] === 'Joomla! 4')
     {
         $version = $branch['version'];
     }
@@ -24,12 +24,12 @@ foreach ($data['branches'] as $branch)
 
 if (!isset($version))
 {
-    echo 'Joomla! 3.x version data not included in API response.' . PHP_EOL;
+    echo 'Joomla! 4.x version data not included in API response.' . PHP_EOL;
     exit(1);
 }
 
 $urlVersion   = str_replace('.', '-', $version);
 $filename     = "Joomla_$version-Stable-Full_Package.zip";
-$fullFilePath = "https://downloads.joomla.org/cms/joomla3/$urlVersion/$filename";
+$fullFilePath = "https://downloads.joomla.org/cms/joomla4/$urlVersion/$filename";
 
 header("Location: $fullFilePath", true, 301);
