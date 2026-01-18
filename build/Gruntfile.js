@@ -18,6 +18,7 @@ module.exports = function(grunt) {
 					{
 						src: [
 							'../templates/joomla/js/countup.js',
+							'../templates/joomla/js/shortcuts.js',
 						],
 						dest: '',
 						expand: true,
