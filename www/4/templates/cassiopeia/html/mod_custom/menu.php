@@ -25,6 +25,9 @@ $language = Factory::getLanguage()->getTag();
 HTMLHelper::_('bootstrap.collapse');
 
 $document = Factory::getDocument();
+$wa = $document->getWebAssetManager();
+$wa->registerAndUseScript('joomla.shortcuts', '/templates/joomla/js/shortcuts.min.js', [], ['defer' => true]);
+
 $renderer = $document->loadRenderer('module');
 
 $modules  = ModuleHelper::getModules('position-0');
